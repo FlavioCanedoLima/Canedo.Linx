@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{36BCBD94-B0DB-4353-85CF-83C55E7F5D88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{763771AD-A184-48A0-9016-E895270ED47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canedo.Linx.Web", "Canedo.Linx.Web\Canedo.Linx.Web.csproj", "{D53B43C3-D354-44AF-B7B3-3AF0FC0E8252}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A51FCDB7-EA49-4B5D-B960-55EB0C191723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fidelidade", "Fidelidade", "{92800CA1-045F-47E8-B1DD-007892D63E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canedo.Linx.Fidelidade.Domain", "Canedo.Linx.Fidelidade.Domain\Canedo.Linx.Fidelidade.Domain.csproj", "{0E9ED6F4-F0B1-4FA9-845C-F2D7C67FB1C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canedo.Linx.Fidelidade.Data", "Canedo.Linx.Fidelidade.Data\Canedo.Linx.Fidelidade.Data.csproj", "{61234EF0-8846-4620-8098-E821FFF057F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canedo.Linx.Fidelidade.ApiService", "Canedo.Linx.Fidelidade.Service\Canedo.Linx.Fidelidade.ApiService.csproj", "{1427BED1-A03D-418E-846B-79CAEA8BF2DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D53B43C3-D354-44AF-B7B3-3AF0FC0E8252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53B43C3-D354-44AF-B7B3-3AF0FC0E8252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53B43C3-D354-44AF-B7B3-3AF0FC0E8252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53B43C3-D354-44AF-B7B3-3AF0FC0E8252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9ED6F4-F0B1-4FA9-845C-F2D7C67FB1C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9ED6F4-F0B1-4FA9-845C-F2D7C67FB1C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9ED6F4-F0B1-4FA9-845C-F2D7C67FB1C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9ED6F4-F0B1-4FA9-845C-F2D7C67FB1C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61234EF0-8846-4620-8098-E821FFF057F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61234EF0-8846-4620-8098-E821FFF057F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61234EF0-8846-4620-8098-E821FFF057F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61234EF0-8846-4620-8098-E821FFF057F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1427BED1-A03D-418E-846B-79CAEA8BF2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1427BED1-A03D-418E-846B-79CAEA8BF2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1427BED1-A03D-418E-846B-79CAEA8BF2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1427BED1-A03D-418E-846B-79CAEA8BF2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{763771AD-A184-48A0-9016-E895270ED47E} = {36BCBD94-B0DB-4353-85CF-83C55E7F5D88}
+		{D53B43C3-D354-44AF-B7B3-3AF0FC0E8252} = {763771AD-A184-48A0-9016-E895270ED47E}
+		{A51FCDB7-EA49-4B5D-B960-55EB0C191723} = {36BCBD94-B0DB-4353-85CF-83C55E7F5D88}
+		{92800CA1-045F-47E8-B1DD-007892D63E51} = {A51FCDB7-EA49-4B5D-B960-55EB0C191723}
+		{0E9ED6F4-F0B1-4FA9-845C-F2D7C67FB1C4} = {92800CA1-045F-47E8-B1DD-007892D63E51}
+		{61234EF0-8846-4620-8098-E821FFF057F9} = {92800CA1-045F-47E8-B1DD-007892D63E51}
+		{1427BED1-A03D-418E-846B-79CAEA8BF2DE} = {92800CA1-045F-47E8-B1DD-007892D63E51}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EA9170A-98E6-4F48-966B-67B8506F775D}
+	EndGlobalSection
+EndGlobal

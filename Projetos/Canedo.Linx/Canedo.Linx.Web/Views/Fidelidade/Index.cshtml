@@ -1,0 +1,70 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Fidelidade</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div class="form-group">
+                <label class="control-label">Número do Cartão</label>
+                <input asp-for="NumeroCartao" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Chave Integração</label>
+                <input asp-for="Integracao.ChaveIntegracao" class="form-control" />
+                <label class="control-label">Código Loja</label>
+                <input asp-for="Integracao.CodigoLoja" class="form-control" />
+                @Html.HiddenFor(s => s.Integracao.Id)
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nsu Cliente
+                </th>
+                <th>
+                    Resultado
+                </th>
+                <th>
+                    Saldo Pontos
+                </th>
+                <th>
+                    Saldo em Pontos
+                </th>
+                <th>
+                    Saldo em Reais
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Fidelizacoes)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NsuCliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Resultado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SaldoPontos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SaldoEmPontos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SaldoEmReais)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
